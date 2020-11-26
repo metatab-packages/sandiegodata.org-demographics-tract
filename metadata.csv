@@ -14,40 +14,41 @@ Version.Major,1
 Version.Minor,1
 Version.Patch,1
 Created,2020-11-25T18:08:20
-Modified,2020-11-26T02:21:23
-
+Modified,2020-11-26T03:08:26
+Giturl,https://github.com/metatab-packages/sandiegodata.org-demographics-tract.git
+""
 Section,Contacts,Email,Organization,Url
 Wrangler,Eric Busboom,eric@civicknowledge.com,Civic Knowledge,http://civicknowledge.com
-
+""
 Section,Documentation,Title,Description,
 Documentation,file:README.md,README,,
-
+""
 Section,References,Name,Description,
 Reference,census://2018/5/CA/tract,tract_boundaries,Census Tract boundaries for tracts in California,
 Reference,census://2018/5/CA/tract/B01003,total_popualtion,Total tract population,
 Reference,census://2018/5/CA/tract/b03002,raceeth,Hispanic or Latino Origin by Race,
-
+""
 Section,Resources,Name,Description,
 Datafile,notebooks/Process.ipynb#tracts,tracts,San Diego county tract boundaries,
 Datafile,notebooks/Process.ipynb#age_sex,age_sex,Age and sex per San Diego tract,
 Datafile,notebooks/Process.ipynb#total_population,total_populaltion,Total population of San Diego tracts,
 Datafile,notebooks/Process.ipynb#raceeth,raceeth,Race and Ethnicity for SaN Diego tracts,
-
+""
 Section,Schema,DataType,Description,,
 Table,tracts,,,,
 Table.Column,statefp,integer,State FIPS code,,
 Table.Column,countyfp,integer,County FIPS code,,
-Table.Column,tractce,integer,Census tract id ,,
+Table.Column,tractce,integer,Census tract id,,
 Table.Column,geoid,string,Tract geoid,,
-Table.Column,name,number,Name of tract. Mostly useless. ,,
-Table.Column,namelsad,string,Longer name for trace. More useless. ,,
+Table.Column,name,number,Name of tract. Mostly useless.,,
+Table.Column,namelsad,string,Longer name for trace. More useless.,,
 Table.Column,mtfcc,string,Feature class code. https://www.census.gov/library/reference/code-lists/mt-feature-class-codes.html,,
 Table.Column,funcstat,string,Functional status. https://www.census.gov/library/reference/code-lists/functional-status-codes.html,,
 Table.Column,aland,integer,Area of land in square meters,,
 Table.Column,awater,integer,Area of water in square meters,,
 Table.Column,intptlat,number,"Lattitude of an internal point, usually the centroid",,
 Table.Column,intptlon,number,"Longitude of the internal point, usually the centroid",,
-Table.Column,geometry,string,"Geometry of boundary, in WKT format. ",,
+Table.Column,geometry,string,"Geometry of boundary, in WKT format.",,
 Table,age_sex,,,,
 Table.Column,geoid,string,Tract geoid,,
 Table.Column,column,string,ID of original census table column,,
@@ -55,7 +56,7 @@ Table.Column,sex,string,Sex category,,
 Table.Column,age,string,Age group,,
 Table.Column,min_age,integer,Minimum age in age group,,
 Table.Column,max_age,integer,Maximum age in age group,,
-Table.Column,raceeth,string,Race/ethnicity. ,,
+Table.Column,raceeth,string,Race/ethnicity.,,
 Table.Column,estimate,integer,Population estimate,,
 Table.Column,margin,integer,90% margin of error,,
 Table,total_populaltion,,,,
